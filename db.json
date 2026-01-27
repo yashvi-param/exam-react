@@ -1,0 +1,64 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Margherita Pizza",
+      "ingredients": "Flour, Tomato Sauce, Mozzarella Cheese",
+      "instructions": "Prepare dough, spread sauce, add cheese, bake in oven",
+      "category": "Veg",
+      "diet": "Vegetarian",
+      "cuisine": "Italian",
+      "difficulty": "Easy",
+      "prepTime": 15,
+      "cookTime": 20,
+      "totalTime": 35,
+      "servings": 2,
+      "dateAdded": "2026-01-20"
+    },
+    {
+      "id": 2,
+      "title": "Paneer Butter Masala",
+      "ingredients": "Paneer, Butter, Tomato, Cream, Spices",
+      "instructions": "Cook gravy, add paneer, simmer with butter and cream",
+      "category": "Veg",
+      "diet": "Vegetarian",
+      "cuisine": "Indian",
+      "difficulty": "Medium",
+      "prepTime": 20,
+      "cookTime": 25,
+      "totalTime": 45,
+      "servings": 4,
+      "dateAdded": "2026-01-22"
+    },
+    {
+      "id": 3,
+      "title": "Chicken Biryani",
+      "ingredients": "Rice, Chicken, Onion, Yogurt, Spices",
+      "instructions": "Cook rice and chicken separately, layer and steam",
+      "category": "Non-Veg",
+      "diet": "Non-Vegetarian",
+      "cuisine": "Indian",
+      "difficulty": "Hard",
+      "prepTime": 30,
+      "cookTime": 40,
+      "totalTime": 70,
+      "servings": 5,
+      "dateAdded": "2026-01-24"
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "12345",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "user123",
+      "role": "user"
+    }
+  ]
+}
