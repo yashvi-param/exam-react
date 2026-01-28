@@ -1,6 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import RecipeForm from "./pages/RecipeForm";
-import RecipeDetails from "./pages/RecipeDetails";
+import RecipeForm from "./Components/pages/RecipeForm";
+import RecipeDetails from "./Components/pages/RecipeDetails";
+import RecipeList from "./Components/pages/RecipeList";
+import Login from "./Auth/Login";
+import PrivateRoute from "./Auth/PrivateRoute";
+import Navbar from "./Components/ui/Navbar";
 
 function App() {
   return (
@@ -9,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<RecipeList />} />
         <Route path="/login" element={<Login />} />
-
         <Route
           path="/add"
           element={
@@ -18,7 +21,6 @@ function App() {
             </PrivateRoute>
           }
         />
-
         <Route
           path="/recipe/:id"
           element={

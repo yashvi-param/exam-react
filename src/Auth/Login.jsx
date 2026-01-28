@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Card, Alert } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { loginSuccess } from '../../Features/recipe/recipeSlice';
+import { loginSuccess } from '../Features/recipe/recipeSlice';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -14,6 +14,7 @@ const Login = () => {
     setError('');
 
     try {
+      // Mock authentication - replace with your actual API call
       const response = await fetch('http://localhost:5173/users');
       const users = await response.json();
       
@@ -27,6 +28,7 @@ const Login = () => {
           username: user.username,
           role: user.role,
         }));
+        // Redirect to home
         window.location.href = '/';
       } else {
         setError('Invalid username or password');

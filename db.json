@@ -29,24 +29,8 @@
       "totalTime": 45,
       "servings": 4,
       "dateAdded": "2026-01-22"
-    },
-    {
-      "id": 3,
-      "title": "Chicken Biryani",
-      "ingredients": "Rice, Chicken, Onion, Yogurt, Spices",
-      "instructions": "Cook rice and chicken separately, layer and steam",
-      "category": "Non-Veg",
-      "diet": "Non-Vegetarian",
-      "cuisine": "Indian",
-      "difficulty": "Hard",
-      "prepTime": 30,
-      "cookTime": 40,
-      "totalTime": 70,
-      "servings": 5,
-      "dateAdded": "2026-01-24"
     }
   ],
-
   "users": [
     {
       "id": 1,
