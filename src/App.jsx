@@ -1,37 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import RecipeForm from "./Components/pages/RecipeForm";
-import RecipeDetails from "./Components/pages/RecipeDetails";
-import RecipeList from "./Components/pages/RecipeList";
-import Login from "./Auth/Login";
-import PrivateRoute from "./Auth/PrivateRoute";
-import Navbar from "./Components/ui/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import RecipeList from "./components/RecipeList";
+import RecipeForm from "./components/RecipeForm";
+import RecipeDetails from "./components/RecipeDetails";
+import PrivateRoute from "./components/PrivateRoute";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<RecipeList />} />
         <Route path="/login" element={<Login />} />
-        <Route
-          path="/add"
-          element={
-            <PrivateRoute>
-              <RecipeForm />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/recipe/:id"
-          element={
-            <PrivateRoute>
-              <RecipeDetails />
-            </PrivateRoute>
-          }
-        />
+        <Route path="/" element={<PrivateRoute><RecipeList /></PrivateRoute>} />
+        <Route path="/add" element={<PrivateRoute><RecipeForm /></PrivateRoute>} />
+        <Route path="/details/:id" element={<PrivateRoute><RecipeDetails /></PrivateRoute>} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;

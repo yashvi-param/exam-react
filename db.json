@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Margherita Pizza",
       "ingredients": "Flour, Tomato Sauce, Mozzarella Cheese",
       "instructions": "Prepare dough, spread sauce, add cheese, bake in oven",
@@ -16,7 +16,7 @@
       "dateAdded": "2026-01-20"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Paneer Butter Masala",
       "ingredients": "Paneer, Butter, Tomato, Cream, Spices",
       "instructions": "Cook gravy, add paneer, simmer with butter and cream",
@@ -29,17 +29,24 @@
       "totalTime": 45,
       "servings": 4,
       "dateAdded": "2026-01-22"
+    },
+    {
+      "id": "d696",
+      "title": "hdg",
+      "ingredients": "uiwdyyws",
+      "category": "Veg",
+      "date": "2026-01-29"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "12345",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "user1",
       "password": "user123",
       "role": "user"

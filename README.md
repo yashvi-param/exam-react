@@ -1,145 +1,16 @@
-<img width="1917" height="820" alt="Screenshot 2026-01-28 151305" src="https://github.com/user-attachments/assets/bf8230e6-e478-403b-b8a4-a06e3faaed4b" />
+# React + Vite
 
-🔐 React Login Page (Redux + Bootstrap)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This project contains a Login component built using React, Redux Toolkit, and React Bootstrap.
-It authenticates users by matching credentials from a local users API and stores login data in Redux.
+Currently, two official plugins are available:
 
-🚀 Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-User login with username & password
+## React Compiler
 
-Authentication using Redux Toolkit
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Error handling for invalid credentials
+## Expanding the ESLint configuration
 
-Styled using React Bootstrap
-
-Redirects user after successful login
-
-🛠️ Tech Stack
-
-React
-
-Redux Toolkit
-
-React Redux
-
-React Bootstrap
-
-JavaScript (ES6)
-
-Fetch API
-
-📂 Component Overview
-
-File: Login.jsx
-
-Main Responsibilities:
-
-Collect username and password
-
-Fetch users from API
-
-Validate login credentials
-
-Dispatch login data to Redux store
-
-Redirect user to home page
-
-🔁 Redux Integration
-
-This component uses Redux to store logged-in user data.
-
-Redux Action Used:
-loginSuccess({
-  id: user.id,
-  username: user.username,
-  role: user.role,
-});
-
-
-Make sure recipeSlice.js contains a loginSuccess reducer.
-
-🌐 API Requirement
-
-The component fetches users from:
-
-http://localhost:5173/users
-
-
-⚠️ Note:
-Usually, APIs run on ports like 3000 or 5000.
-If you are using json-server, your command might look like:
-
-json-server --watch db.json --port 5173
-
-Sample db.json
-{
-  "users": [
-    {
-      "id": 1,
-      "username": "admin",
-      "password": "1234",
-      "role": "admin"
-    },
-    {
-      "id": 2,
-      "username": "user",
-      "password": "1234",
-      "role": "user"
-    }
-  ]
-}
-
-▶️ How to Run the Project
-
-Install dependencies:
-
-npm install
-
-
-Start the React app:
-
-npm run dev
-
-
-Start json-server (if used):
-
-json-server --watch db.json --port 5173
-
-🎨 UI Layout
-
-Centered login card
-
-Bootstrap form fields
-
-Error alert on invalid login
-
-Responsive design
-
-🔐 Login Flow
-
-User enters credentials
-
-App fetches users list
-
-Credentials are validated
-
-Redux state is updated
-
-User is redirected to /
-
-✅ Improvements You Can Add
-
-Password hashing
-
-JWT authentication
-
-Protected routes
-
-Logout functionality
-
-API error handling
-
-Environment variables for API URL
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
