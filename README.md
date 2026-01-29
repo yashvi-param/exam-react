@@ -1,16 +1,103 @@
-# React + Vite
+<img width="1911" height="842" alt="Screenshot 2026-01-29 180556" src="https://github.com/user-attachments/assets/327aaa46-8004-4694-8cfe-dfd079c167a9" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🍲 Recipe Book Application
 
-Currently, two official plugins are available:
+A Recipe Book web application built using React, React Router, and Redux.
+It supports authentication, protected routes, and CRUD operations for managing recipes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## React Compiler
+🔐 Login authentication
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛡️ Protected routes using PrivateRoute
 
-## Expanding the ESLint configuration
+📋 View all recipes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+➕ Add new recipes
+
+📝 View recipe details
+
+🧭 Client-side routing with React Router
+
+🎨 Responsive UI (Bootstrap / CSS)
+
+🧩 Tech Stack
+
+React
+
+React Router DOM
+
+Redux / React-Redux
+
+Bootstrap
+
+Axios (for API calls)
+
+📁 Project Structure
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Login.jsx
+│   ├── RecipeList.jsx
+│   ├── RecipeForm.jsx
+│   ├── RecipeDetails.jsx
+│   └── PrivateRoute.jsx
+│
+├── redux/
+│   └── recipeSlice.js
+│
+├── App.jsx
+├── index.js
+
+🔐 Routing Overview
+Route	Description	Protected
+/login	Login Page	❌ No
+/	Recipe List	✅ Yes
+/add	Add Recipe	✅ Yes
+/details/:id	Recipe Details	✅ Yes
+🧠 Authentication Logic
+
+Authentication status is stored in localStorage
+
+PrivateRoute checks if the user is logged in
+
+Unauthorized users are redirected to /login
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/your-repo/recipe-book.git
+cd recipe-book
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Start the Application
+npm start
+
+
+App will run at:
+👉 http://localhost:3000
+
+🧪 Sample Login (Example)
+Username: admin
+Password: admin
+
+
+(You can customize this logic in the Login component)
+
+🛠️ Future Enhancements
+
+✏️ Edit recipe feature
+
+🗑️ Delete recipe
+
+🌐 Backend API integration
+
+🔑 JWT authentication
+
+📌 Author
+
+Yashvi
+Full Stack Development Student
+Red & White Multimedia Education
